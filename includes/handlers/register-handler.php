@@ -41,6 +41,8 @@ if(isset($_POST['registerButton'])) {
 
 	$password2 = sanitizeFormPassword($_POST['password2']);
 
+	$account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
+
 }
 
 
